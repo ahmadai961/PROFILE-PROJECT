@@ -1,0 +1,540 @@
+    body{
+        background-color:rgb(2, 6, 24);
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+        grid-template-areas:
+        "card about-me"
+        "card work-exp"
+        "skills work-exp"
+        "Edu work-exp"
+        "Edu footer";
+        margin:50px auto 50px auto;
+        width:70%;
+        height: auto;
+        gap: 20px;
+        color:white;
+        padding:none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    p{
+        font-size: 15px;
+    }
+    
+    h1{
+        font-size:25px;
+    }
+    h2{
+        font-size: 20px;
+    }
+
+    .icon3{
+        height: 30px;
+        width: 30px;
+        margin:auto 10px auto 20px;
+    }
+
+    /*------------------------------------------info card style------------------------*/
+    header{
+        /*background-color: rgb(68, 87, 252);*/
+        grid-area: card;
+        /* background: linear-gradient(135deg, #2f46ff 0%,#5a4dff 45%,#8b5cff 100%);                     linear-gradient(135deg, #2f46ff 0%,#5a4dff 45%,#8b5cff 100%); */
+        background-image: url(../images/1.png);
+        background-size : 100%;
+        background-position: center;
+        border-radius: 10px;
+        display: inline-flex;
+        flex-direction: column;                        /*justify-content: for x-axis*/
+        align-items: center;                          /*align-items: for y-axis*/                   
+        margin-right: auto;                          /*align-self: for the element itself if i want to move it alone without affecting other elements*/
+        height:500px;
+        width:100%;
+        max-width: 400px;
+        
+    }
+
+    .icons{
+        height: 25px;
+        width: 25px;
+        margin-top: 9px;
+        margin-left: 5px;
+    }
+
+    .icon2{
+        height: 20px;
+        width: 20px;
+        margin:7px auto auto auto; 
+        
+    }
+
+    button.github img.git{
+        height: 35px;
+        width: 35px;
+        margin-bottom:10px;
+    }
+
+
+    .img{
+        background-image: url(../images/my-photo.png);
+        background-size : 100%;
+        border-radius:50%;
+        border:1px solid white;
+        background-position: center;
+        height:150px;
+        width:150px;
+        margin-top:20px;
+    }
+
+    h1.h{
+        
+        text-align: center;
+        
+    }
+
+    p.p{
+        font-size:20px;
+        text-align: center;
+        margin-top: -5px;
+    }
+
+    .box{
+        /* background: linear-gradient(135deg, #2f46ff 0%,#5a4dff 45%,#8b5cff 100%); */
+        background: linear-gradient(135deg, rgb(118, 92, 255), rgb(155, 92, 255));
+        border-radius: 5px;
+        display:flex;
+        flex-direction:row;
+        margin-top: 10px;
+        height: 40px;
+        width: 90%;
+    }
+
+    p.insideBox{
+        text-align: center;
+        text-wrap:wrap;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    
+
+    .box.mail{
+        display:inline-flex;
+        flex-direction:row;
+        
+    }
+
+    footer.bt {
+        width:90%;
+        height: 30px;
+        margin-top:10px;
+        margin-bottom:10px;
+        display : flex;
+        gap:5px;                                            /*justify-content: space-between;هذا اذا حاب اخلبي مسافة ثابتة بينهم */
+    }
+    button.linkedIn , button.github{
+        /* background:  linear-gradient(135deg, #2f46ff 0%,#5a4dff 45%,#8b5cff 100%); */
+        background: linear-gradient(135deg, rgb(118, 92, 255), rgb(155, 92, 255));
+        border-radius: 5px;
+        border: none;
+        height:40px;
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        transition: transform 0.3s ease;
+    }
+
+    button.linkedIn:hover , button.github:hover{
+        cursor: pointer;
+        box-shadow:  0px 0px 10px rgba(255, 255, 255, 0.7);
+        
+        transform: scale(1.10);
+    }
+    p.insideBox2{
+        color:white;
+        font-size:20px;
+        margin:auto auto auto -20px;
+    }
+    .icon2{
+        height: 25px;
+        width: 25px;
+        margin:7px auto auto auto; 
+        
+    }
+    /*------------------------------------------End of infocard style------------------*/
+    
+
+
+    /*------------------------------------------about me style-------------------------*/
+    div.about-me{
+        grid-area: about-me;
+        background-color:rgb(15, 23, 43);
+        border-radius: 10px;
+        height: fit-content;
+        width: 100%;
+        max-width: 1000px;
+        
+    }
+    
+    div.about-me h2{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    div.about-me p{
+        margin:auto 10px 20px 20px;
+    }
+    /*------------------------------------------End about me style---------------------*/
+
+
+
+    /*------------------------------------------cards style----------------------------*/
+    section.cards{
+        background-color:rgb(15, 23, 43);
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+        border-radius: 10px;
+        align-items: left;
+    }
+    /*------------------------------------------End cards style------------------------*/
+
+
+
+    /*------------------------------------------skill card style-----------------------*/
+    section.skills{
+        grid-area: skills;
+        height: 310px;
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    div.only-one {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-bottom: -10px;
+        margin-left:-20px;
+    }
+
+    div.cards-skill{
+        
+        width: 100%;
+        height:60px;
+        padding: none;
+        margin: none;
+        
+    }
+
+    .cards-skill p{
+        margin-left: 20px;
+
+    }
+
+    .cards-skill div.skill-bar{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    p.title-for-skill-bar{
+        color:rgb(136, 152, 176);
+        text-align: left;
+        margin-left: 23px;
+    }
+
+    .skill-bar p{
+        margin-top:0px;
+        margin-right: -5px;
+        border-radius:10px;
+        padding:1px 10px 2px 10px;
+        
+    }
+
+    .skill-bar p:hover{
+        box-shadow:  inset 0px 0px 10px rgba(255, 255, 255, 0.7);
+    }
+
+    .skill-Frontend p{
+        background-color: rgb(21, 43, 86);
+        color:rgb(48, 150, 244);
+        border:1px solid rgb(27, 69, 139);
+        font-size: 12px;
+    }
+
+    .skill-Backend p{
+        background-color: rgb(12, 58, 50);
+        color:rgb(123, 233, 134);
+        border:1px solid rgb(8, 101, 59);
+        font-size: 12px;
+    }
+
+    .skill-DevOps p{
+        background-color: rgb(64, 39, 34);
+        color:rgb(255, 184, 106);
+        border:1px solid rgb(123, 59, 24);
+        font-size: 12px;
+    }
+    /*------------------------------------------End skill card style-------------------*/
+
+
+
+    /*------------------------------------------Edu card style-----------------------*/
+    section.Edu{
+        grid-area: Edu;
+        height: 310px;
+        width: 100%;
+        max-width: 400px;
+        
+
+    }
+
+    p.title-or-idc{
+        color:rgb(136, 152, 176);
+        width: 90%;
+        margin: 0px 0px 0px 20px;
+        
+    }
+
+    div.box-of-divider{
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .divider{
+        border: none;
+        height: 1px;
+        width: 90%;
+        background: rgba(255,255,255,0.15);
+        margin: 10px auto;
+    }
+
+    #IT{
+        margin: 0px 0px 0px 20px;
+    }
+
+    .Edu div.Certificaiton{
+        display:flex;
+        flex-direction:column;
+        margin-left: 20px;
+        margin-top: -10px;
+    }
+
+    .cert{
+        
+        height: fit-content;
+        width: fit-content;
+        margin-bottom: -27px;
+        margin-left:20px;
+        display: list-item;
+        list-style-position: left;
+    }
+
+    /*------------------------------------------End Edu card style-------------------*/
+
+
+
+    /*------------------------------------------work exp style-------------------------*/
+    div.work-exp{
+        grid-area: work-exp;
+        background-color:rgb(15, 23, 43);
+        display: flex;
+        flex-direction: column;
+        gap:15px;
+        border-radius: 10px;
+        height: fit-content;
+    }
+    div.content{
+        display: flex;
+        gap: 16px;
+        margin:0px 20px 0px 20px;
+    }
+    .line-col{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dot{
+        width: 8px;
+        height: 8px;
+        background: rgb(43, 127, 255);
+        border-radius: 50%;
+    }
+
+    .v-line{
+        width: 2px;
+        max-height: 230px;
+        flex: 1;
+        background: rgb(29, 75, 151);
+        margin-top: 6px;
+    }
+    .item-body{
+        flex: 1;
+        background: rgba(255,255,255,0.03);
+        padding: 12px;
+        border-radius: 8px;
+       
+    }
+
+    .last-item-body{
+        margin-bottom:30px;
+    }
+    div.headr-of-name{
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+    }
+
+    p.time{
+        background-color: rgb(29, 41, 61);
+        border-radius: 20px;
+        padding: 5px 10px 0px 10px;
+        color:rgb(144, 161, 158);
+    }
+
+    div p.name{
+        font-size:17px;
+        color:rgb(69, 162, 255);
+        margin-top:-15px;
+        
+    }
+
+    div.list{
+        display: list-item;
+        list-style-position: left;
+        margin-left:15px;
+    }
+
+    .Dotsec{
+        background: rgb(173, 70, 255);
+    }
+
+    .lineSec{
+        background: rgb(93, 46, 152);
+    }
+    div p.nameSec{
+        color:rgb(194, 122, 255);
+    }
+
+    .DotTh{
+        background: rgb(8, 100, 58);
+    }
+
+    .lineTh{
+        background: rgb(12, 58, 50);
+        max-height: 200px;
+    }
+    div p.nameTh{
+        color:rgb(123, 241, 168);
+    }
+    
+    /*------------------------------------------End work exp style---------------------*/
+
+
+
+    /*------------------------------------------footer exp style-----------------------*/
+    footer{
+        grid-area: footer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius:10px;
+    }
+    footer div.main{
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+        width: 100%;
+        height: fit-content;
+    }
+    footer div.main div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        width:32%;
+        height:120px;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    footer div.main div:hover{
+        transform: scale(1.10);
+    }
+
+    p.text{
+        font-size: 15px;
+       
+    }
+
+    h1.text{
+        font-size: 40px;
+        margin-top:0px;
+        margin-bottom: -15px;
+        margin-right: 30px;
+    }
+
+    div.Num1{
+        background-color: rgb(22, 108, 194);
+    }
+    div.Num2{
+        background-color:rgb(114, 18, 198);
+    }
+    div.Num3{
+        background-color:rgb(46, 97, 65);
+    }
+
+
+
+
+
+    /*------------------------------------------End footer exp style-------------------*/
+
+    @media screen and (min-width:1536px) and (max-width: 1780px){
+        body{
+            grid-template-columns: 1fr 2fr;
+        }
+    }
+
+    @media screen and  (max-width: 1780px){
+        body{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        /*------------------------------------------conteners inside-------------------*/
+        header{
+            background-color: #2f46ff;
+            max-width: none;
+        }
+        div.about-me{
+            max-width: none;
+        }
+        section.skills{
+            max-width: none;
+        }
+
+        section.Edu{
+            max-width: none;
+        }
+
+        footer{
+            margin-top:8px;
+            width: 100%;
+            
+        }
+
+        div.work-exp{
+            width: 100%;
+        }
+        .v-line{
+            max-height: none;
+        }
+        .lineTh{
+        max-height: 250px;
+    }
+    }
